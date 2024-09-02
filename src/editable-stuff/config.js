@@ -6,31 +6,31 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Koerner",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Gray-Buchta",
+  message: " Passionate about building the future of AI. ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/koernergb",
     },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
-    },
+    // {
+    //   image: "fa-facebook",
+    //   url: "https://www.facebook.com/hashirshoaeb",
+    // },
+    // {
+    //   image: "fa-instagram",
+    //   url: "https://www.instagram.com/hashirshoaeb/",
+    // },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
-    },
+      url: "https://www.linkedin.com/in/koerner-gray-buchta-2b46a7170/",
+    }
+    // {
+    //  image: "fa-twitter",
+    //  url: "https://www.twitter.com/hashirshoaeb/",
+    // },
   ],
 };
 
@@ -51,11 +51,11 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/koernerprofilephoto.jpg"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "My name is Koerner. I’m a CS student and research assistant at Michigan Robotics. I am motivated by the search for new knowledge, new technology, and the creation of the future through computation.",
+  resume: "https://koernergb.github.io/pdf/KGBResume8-25-2024.pdf",
 };
 
 // PROJECTS SECTION
@@ -66,9 +66,14 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "koernergb", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ['VoiceCloneAI', 
+                  'TibetanTranslator', 
+                  'PDFSummarizer', 
+                  'ApplicationAgent', 
+                  'ClericRAG',
+                  'FoodBot'],
 };
 
 // Leadership SECTION
@@ -97,7 +102,7 @@ const leadership = {
 
 // SKILLS SECTION
 const skills = {
-  show: true,
+  show: false,
   heading: "Skills",
   hardSkills: [
     { name: "Python", value: 90 },
@@ -126,30 +131,30 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm always looking for new opportunities! If you want to get in touch, please feel free to email me at",
+  email: "koernerg@umich.edu",
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Machine Learning Engineer, Rose AI', // Here Add Company Name
+      companylogo: require('../editable-stuff/roseailogojpg.jpg'),
+      date: 'May 2024 – Present',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Gen AI Developer Intern, UM-ITS',
+      companylogo: require('../editable-stuff/itsjpeg.jpg'),
+      date: 'July 2023 – October 2023',
     },
   ]
 }
 
 // Blog SECTION
-// const blog = {
-//   show: false,
-// };
+const blog = {
+  show: true,
+};
 
 export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
